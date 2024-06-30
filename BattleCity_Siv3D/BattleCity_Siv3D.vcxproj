@@ -177,6 +177,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
+    <None Include="App\asset-list.tsv" />
     <None Include="App\dll\soundtouch\SoundTouch_x64.dll" />
     <None Include="App\engine\font\fontawesome\fontawesome-brands.otf.zstdcmp" />
     <None Include="App\engine\font\fontawesome\fontawesome-solid.otf.zstdcmp" />
@@ -336,7 +337,6 @@
     <ClInclude Include="Scenes\Common.hpp" />
     <ClInclude Include="Scenes\Game.hpp" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Utils\Anime.hpp" />
     <ClInclude Include="Utils\AssetReader.hpp" />
     <ClInclude Include="Utils\Editor\ConfigObjects.hpp" />
     <ClInclude Include="Utils\Editor\ConfigParser.hpp" />
@@ -346,7 +346,9 @@
     <ClInclude Include="Utils\Editor\JSONParser.hpp" />
     <ClInclude Include="Utils\Editor\NotificationAddon.hpp" />
     <ClInclude Include="Utils\HPBar.h" />
+    <ClInclude Include="Utils\SpriteTileRenderer.hpp" />
     <ClInclude Include="Utils\TimeUtil.hpp" />
+    <ClInclude Include="WindowSettings.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App\example\obj\blacksmith.obj">

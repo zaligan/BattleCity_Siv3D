@@ -798,6 +798,9 @@
     <None Include="App\engine\shader\glsl\quad_warp.frag">
       <Filter>Resource Files\engine\shader\glsl</Filter>
     </None>
+    <None Include="App\asset-list.tsv">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Media Include="App\example\test.mp3">
@@ -866,9 +869,6 @@
     <ClInclude Include="Utils\Editor\NotificationAddon.hpp">
       <Filter>Source Files\Util\Editor</Filter>
     </ClInclude>
-    <ClInclude Include="Utils\Anime.hpp">
-      <Filter>Source Files\Util</Filter>
-    </ClInclude>
     <ClInclude Include="Utils\AssetReader.hpp">
       <Filter>Source Files\Util</Filter>
     </ClInclude>
@@ -883,6 +883,12 @@
     </ClInclude>
     <ClInclude Include="Scenes\Game.hpp">
       <Filter>Source Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SpriteTileRenderer.hpp">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowSettings.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

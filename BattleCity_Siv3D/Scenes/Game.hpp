@@ -1,7 +1,6 @@
 ﻿#pragma once
 #include "Common.hpp"
 
-
 /// @brief ゲームシーン
 class Game : public App::Scene
 {
@@ -16,5 +15,10 @@ public:
 	void draw() const override;
 
 private:
-	int32 m_time = 0;
+
+	static constexpr Point m_tileSize = { 16, 16 };
+
+	Point m_playerSpriteIndex = { 0, 0 };
+
+	double m_spriteTimeInterval = 0.3;
 };
