@@ -8,9 +8,8 @@
 # pragma comment(lib, "behaviortree_cpp")
 # endif
 
-int main2()
+void Main()
 {
-
 	BehaviorTreeFactory factory;
 
 	factory.registerNodeType<SaySomething>("SaySomething");
@@ -19,13 +18,6 @@ int main2()
 	auto tree = factory.createTreeFromFile("../my_tree.xml");
 
 	tree.tickWhileRunning();
-
-	return 0;
-}
-
-void Main()
-{
-	main2();
 
 	while (System::Update())
 	{
