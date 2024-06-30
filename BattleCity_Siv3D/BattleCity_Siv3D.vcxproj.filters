@@ -139,6 +139,15 @@
     <Filter Include="Source Files\BT_Nodes">
       <UniqueIdentifier>{064acd17-fd32-4e09-bd44-76f51082ea76}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{7a416d24-19bf-4d07-8ca5-36ce21cc79ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util\Editor">
+      <UniqueIdentifier>{a72a40a4-c812-419a-b665-ddf832d47adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scenes">
+      <UniqueIdentifier>{29c11396-ecde-44eb-819b-3285aee27ca4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -146,6 +155,27 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Editor\ConfigParser.cpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Editor\DirectoryMonitor.cpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Editor\Editor.cpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Editor\JSONParser.cpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\AssetReader.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\TimeUtil.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Game.cpp">
+      <Filter>Source Files\Scenes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -814,6 +844,45 @@
     </ClInclude>
     <ClInclude Include="BT_Nodes\SampleNodes.hpp">
       <Filter>Source Files\BT_Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Editor\ConfigObjects.hpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Editor\ConfigParser.hpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Editor\DirectoryMonitor.hpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Editor\Editor.hpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Editor\IConfig.hpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Editor\JSONParser.hpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Editor\NotificationAddon.hpp">
+      <Filter>Source Files\Util\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Anime.hpp">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\AssetReader.hpp">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\HPBar.h">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\TimeUtil.hpp">
+      <Filter>Source Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Common.hpp">
+      <Filter>Source Files\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Game.hpp">
+      <Filter>Source Files\Scenes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

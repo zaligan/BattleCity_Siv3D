@@ -116,10 +116,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Scenes\Game.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Utils\AssetReader.cpp" />
+    <ClCompile Include="Utils\Editor\ConfigParser.cpp" />
+    <ClCompile Include="Utils\Editor\DirectoryMonitor.cpp" />
+    <ClCompile Include="Utils\Editor\Editor.cpp" />
+    <ClCompile Include="Utils\Editor\JSONParser.cpp" />
+    <ClCompile Include="Utils\TimeUtil.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\engine\texture\box-shadow\128.png" />
@@ -326,7 +333,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BT_Nodes\SampleNodes.hpp" />
+    <ClInclude Include="Scenes\Common.hpp" />
+    <ClInclude Include="Scenes\Game.hpp" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Utils\Anime.hpp" />
+    <ClInclude Include="Utils\AssetReader.hpp" />
+    <ClInclude Include="Utils\Editor\ConfigObjects.hpp" />
+    <ClInclude Include="Utils\Editor\ConfigParser.hpp" />
+    <ClInclude Include="Utils\Editor\DirectoryMonitor.hpp" />
+    <ClInclude Include="Utils\Editor\Editor.hpp" />
+    <ClInclude Include="Utils\Editor\IConfig.hpp" />
+    <ClInclude Include="Utils\Editor\JSONParser.hpp" />
+    <ClInclude Include="Utils\Editor\NotificationAddon.hpp" />
+    <ClInclude Include="Utils\HPBar.h" />
+    <ClInclude Include="Utils\TimeUtil.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App\example\obj\blacksmith.obj">
