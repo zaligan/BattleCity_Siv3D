@@ -1,9 +1,10 @@
-﻿# include <Siv3D.hpp> // Siv3D v0.6.14
-# include "Scenes/Common.hpp"
-# include "Scenes/Game.hpp"
-# include "behaviortree_cpp/bt_factory.h"
-# include "BT_Nodes/SampleNodes.hpp"
-# include "Utils/AssetReader.hpp"
+﻿#include <Siv3D.hpp> // Siv3D v0.6.14
+#include "WindowSettings.hpp"
+#include "Scenes/Common.hpp"
+#include "Scenes/Game.hpp"
+#include "behaviortree_cpp/bt_factory.h"
+#include "BT_Nodes/SampleNodes.hpp"
+#include "Utils/AssetReader.hpp"
 
 
 # if SIV3D_BUILD(DEBUG)
@@ -16,6 +17,9 @@ using namespace Util;
 
 void Main()
 {
+	//ウィンドウの設定
+	WindowSettings::SetWindow();
+
 	//シーンマネージャーを作成
 	App manager;
 	//シーンの追加
