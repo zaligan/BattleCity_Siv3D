@@ -136,6 +136,9 @@
     <Filter Include="Resource Files\engine\font\min">
       <UniqueIdentifier>{1b103960-f11a-4515-b4f1-f59333ce00d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\BT_Nodes">
+      <UniqueIdentifier>{064acd17-fd32-4e09-bd44-76f51082ea76}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -808,6 +811,9 @@
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BT_Nodes\SampleNodes.hpp">
+      <Filter>Source Files\BT_Nodes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
