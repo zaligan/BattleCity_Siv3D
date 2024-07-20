@@ -1,6 +1,5 @@
 ﻿#pragma once
 #include "Common.hpp"
-#include "../Map.hpp"
 #include "../MapManager.hpp"
 #include "../Character/Player.hpp"
 
@@ -19,6 +18,8 @@ public:
 
 private:
 
+	MapManager m_mapManager;
+
 	/// @brief プレイヤー
-	Player m_player;
+	Player m_player{ m_mapManager };
 };

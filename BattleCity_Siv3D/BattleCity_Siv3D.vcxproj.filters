@@ -180,6 +180,9 @@
     <ClCompile Include="Character\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MapManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="App\icon.ico">
@@ -893,13 +896,13 @@
     <ClInclude Include="WindowSettings.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Map.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="Character\Player.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="MapManager.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapInfo.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

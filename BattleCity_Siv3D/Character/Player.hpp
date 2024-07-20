@@ -1,11 +1,11 @@
-﻿#pragma onece
+﻿#pragma once
 #include <Siv3D.hpp>
-#include "../Map.hpp"
+#include "../MapManager.hpp"
 
 class Player
 {
 public:
-	Player();
+	Player(MapManager& mapManager);
 
 	/// @brief プレイヤーの更新
 	void update();
@@ -14,6 +14,9 @@ public:
 	void draw() const;
 
 private:
+
+	MapManager& m_mapManager;
+
 	/// @brief スプライトシートのプレイヤーが映ったインデックス
 	Point m_playerSpriteIndex = { 0, 0 };
 
@@ -24,13 +27,13 @@ private:
 	int32 m_direction = 0;
 
 	/// @brief プレイヤーの座標
-	Vec2 m_playerPos = Vec2{ 4.0, 12.0 } * MapInfo::s_tileSize + MapInfo::s_mapBasePos;
+	Vec2 m_playerPos = Vec2{ 4.0, 12.0 } * MapInfo::tileSize + MapInfo::mapBasePos;
 
 	/// @brief プレイヤーのピクセル座標
 	Point m_playerPixelPos = Point{ 0, 0 };
 
 	/// @brief プレイヤ―の衝突範囲、壁のめり込み防止のため1ピクセル大きく
-	Rect m_playerRect = Rect{ 0, 0, MapInfo::s_tileSize + Point{ 1, 1 } };
+	Rect m_playerRect = Rect{ 0, 0, MapInfo::tileSize + Point{ 1, 1 } };
 
 	/// @brief プレイヤーの移動速度
 	double m_playerSpeed = 35.0;

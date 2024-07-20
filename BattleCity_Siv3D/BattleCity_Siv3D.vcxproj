@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClCompile Include="Character\Player.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MapManager.cpp" />
     <ClCompile Include="Scenes\Game.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -336,7 +337,7 @@
   <ItemGroup>
     <ClInclude Include="BT_Nodes\SampleNodes.hpp" />
     <ClInclude Include="Character\Player.hpp" />
-    <ClInclude Include="Map.hpp" />
+    <ClInclude Include="MapInfo.hpp" />
     <ClInclude Include="MapManager.hpp" />
     <ClInclude Include="Scenes\Common.hpp" />
     <ClInclude Include="Scenes\Game.hpp" />
