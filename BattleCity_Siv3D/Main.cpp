@@ -19,7 +19,7 @@ void Main()
 {
 	//ウィンドウの設定
 	WindowSettings::SetWindow();
-
+	Scene::SetTextureFilter(TextureFilter::Nearest);
 	//シーンマネージャーを作成
 	App manager;
 	//シーンの追加
@@ -43,7 +43,7 @@ void Main()
 
 	auto tree = factory.createTreeFromFile("../my_tree.xml");
 
-	tree.tickWhileRunning();
+	//tree.tickWhileRunning();
 
 	while (System::Update())
 	{

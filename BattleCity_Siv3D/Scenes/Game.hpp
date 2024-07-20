@@ -1,5 +1,8 @@
 ﻿#pragma once
 #include "Common.hpp"
+#include "../Map.hpp"
+#include "../MapManager.hpp"
+#include "../Character/Player.hpp"
 
 /// @brief ゲームシーン
 class Game : public App::Scene
@@ -16,9 +19,6 @@ public:
 
 private:
 
-	static constexpr Point m_tileSize = { 16, 16 };
-
-	Point m_playerSpriteIndex = { 0, 0 };
-
-	double m_spriteTimeInterval = 0.3;
+	/// @brief プレイヤー
+	Player m_player;
 };
